@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "turn-armory",
+	"version": "${version}",
+	"name": "Turn Armory",
+	"description": "This is a mod that hopes to expand on the SoulBound mod with a RPGish armory at your disposal",
+	"authors": [
+		"Eze45!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/turn-armory/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ezeq.turnarmory.TurnArmory"
+		],
+		"fabric-datagen": [
+			"net.ezeq.turnarmory.TurnArmoryDataGenerator"
+		],
+		"client": [
+			"net.ezeq.turnarmory.TurnArmoryClient"
+		]
+	},
+	"mixins": [
+		"turn-armory.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
