@@ -1,5 +1,6 @@
 package net.ezeq.turnarmory;
 
+import net.ezeq.turnarmory.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -13,6 +14,7 @@ public class TurnArmory implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 		LOGGER.info("Forging an Armory!");
 	}
